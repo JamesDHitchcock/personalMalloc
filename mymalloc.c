@@ -92,10 +92,6 @@ void* free_list_next(void * node){
 	return( (void *) tmp->next);
 }
 
-void coalesce_free_list{
-
-}
-
 void* check_free_list(size_t size){//returns first block of memory with > size
 	Flist search = (Flist) free_list_begin();
 	while(search != NULL){
